@@ -4,7 +4,7 @@ Created on Tue Oct  6 09:49:18 2020
 
 @author: DARF
 
-try random ints to find the number of guess_my_number.GuessMachine
+tries the middle between min and max to find the number of guess_my_number.GuessMachine
 """
 
 import random
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     max = MAX
     guess_machine = GuessMachine()
     while True:
-        attempt = random.randint(min, max)
+        attempt = int((min + max)/2)
         result = guess_machine.guess(attempt)
         print("tried %d : %s" % (attempt, result))
         if result == 'found':
