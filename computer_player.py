@@ -15,7 +15,7 @@ if __name__ == "__main__":
     max = MAX
     guess_machine = GuessMachine()
     while True:
-        attempt = random.randint(MIN, MAX)
+        attempt = random.randint(min, max)
         result = guess_machine.guess(attempt)
         print("tried %d : %s" % (attempt, result))
         if result == 'found':
